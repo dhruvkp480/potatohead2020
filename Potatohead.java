@@ -17,8 +17,9 @@ public class Potatohead
 	private String hatColor;
 	private String noseColor;
 	private String armStyle;
-	
+	private String gloveColor;
 	// add one instance variable
+	
 
   
 	/*  the default, no argument constructor  */
@@ -37,8 +38,10 @@ public class Potatohead
 		noseStyle = "";
 		hatColor = "";
 		armStyle = "curved";
+		gloveColor = "unknown"
 
     		// initialize your instance variable
+		
 
 	}
   
@@ -180,6 +183,14 @@ public class Potatohead
 		armStyle = _style;
 	}
 	
+	public void setGloveColor(String _gloveColor){
+		gloveColor = _gloveColor;
+	}
+	
+	public String getGloveColor(){
+		return gloveColor;
+	}
+	
 	public String toString()
 	{
 		String output;
@@ -197,6 +208,7 @@ public class Potatohead
 		output += "\nHat Color: " + hatColor;
    		output += "\nNose Color: " + noseColor;
 		output += "\nArm Style: " + armStyle;
+		output += "\nGlove Color: " + gloveColor;
 
 
     
